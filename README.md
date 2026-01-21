@@ -1,13 +1,40 @@
-# Prisma_ORM
+# Prisma ORM with Express
 
-commands -> npm init -y  
-npm  i express
-npm install -g nodemon 
-npm i prisma
-npx prisma init 
+A CRUD API built with Express.js and Prisma ORM.
 
+## Setup
 
-# Model 
+```bash
+npm install
+npx prisma init
+npx prisma migrate dev --name create_user_schema
+```
 
-password String?  -> it means (optional field and nullable allowed)
-npx prisma migrate dev --name create_user_schema  ->> names gives for particular table to create
+## Running the Server
+
+```bash
+npm start
+```
+
+## API Endpoints
+
+- `GET /api/users` - Get all users
+- `GET /api/users/:id` - Get user by ID
+- `POST /api/users` - Create a new user
+- `PUT /api/users/:id` - Update user
+- `DELETE /api/users/:id` - Delete user
+
+## Prisma Commands
+
+```bash
+# Run migrations
+npx prisma migrate dev --name <migration_name>
+
+# Open Prisma Studio (DB viewer)
+npx prisma studio
+```
+
+## Notes
+
+- Use `String?` in schema for optional/nullable fields
+- Use `deleteMany` for bulk deletions 
