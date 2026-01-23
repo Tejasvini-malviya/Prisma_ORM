@@ -1,0 +1,30 @@
+{
+  "name": "prisma_orm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tejasvini-malviya/Prisma_ORM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tejasvini-malviya/Prisma_ORM/issues"
+  },
+  "homepage": "https://github.com/Tejasvini-malviya/Prisma_ORM#readme",
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "pg": "^8.17.1",
+    "prisma": "^7.2.0"
+  }
+}
