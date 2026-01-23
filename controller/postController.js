@@ -1,6 +1,5 @@
 import prisma from "../DB/db.config.js";
 
-// Get all posts
 export const fetchPosts = async (req, res) => {
   try {
     const posts = await prisma.post.findMany({
@@ -21,7 +20,6 @@ export const fetchPosts = async (req, res) => {
   }
 };
 
-// Get post by ID
 export const showPosts = async (req, res) => {
   try {
     const postId = Number(req.params.id);
@@ -66,7 +64,6 @@ export const showPosts = async (req, res) => {
   }
 };
 
-// Create post
 export const createPost = async (req, res) => {
   try {
     const { userId, tittle, Description } = req.body;
@@ -111,7 +108,6 @@ export const createPost = async (req, res) => {
   }
 };
 
-// Update post
 export const updatePost = async (req, res) => {
   try {
     const postId = Number(req.params.id);
@@ -144,7 +140,6 @@ export const updatePost = async (req, res) => {
   }
 };
 
-// Delete post
 export const deletePost = async (req, res) => {
   try {
     const postId = Number(req.params.id);
