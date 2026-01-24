@@ -1,6 +1,6 @@
 # Prisma ORM with Express
 
-A CRUD API built with Express.js and Prisma ORM demonstrating database relationships with Users, Posts, and Comments.
+A CRUD API built with Express.js and Prisma ORM demonstrating database relationships with Users, Posts.
 
 ## Setup
 
